@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+
+{% block title %} Skills {% endblock title %}
+
+
+{% block style %}
+
+<style>
+    img {
+        width: 25%;
+    }
+
+    .col {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+</style>
+
+{% endblock style %}
+
+
+{% block skillsactive %} active {% endblock skillsactive %}
+
+
+{% block body %}
+
+<div style="width: 60%; margin: auto;">
+    <div class="container text-center">
+        <h3 class="mt-5 mb-4">Backend Development</h3>
+        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+            <div class="col py-3">
+                <img src="/static/images/skills/java-logo-240.png" alt="...">
+                <p>Java</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/spring-boot-logo-240.png" alt="...">
+                <p>SpringBoot</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/coin-stack-solid-240.png" alt="...">
+                <p>MySQL</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/link-regular-240.png" alt="...">
+                <p>JDBC</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/cube-alt-solid-240.png" alt="...">
+                <p>Hibernate</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/python-logo-240.png" alt="...">
+                <p>Python</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/django-logo-240.png" alt="...">
+                <p>Django</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <h3 class="mt-5 mb-4">Frontend Development</h3>
+        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+            <div class="col py-3">
+                <img src="/static/images/skills/html5-logo-240.png" alt="...">
+                <p>HTML</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/css3-logo-240.png" alt="...">
+                <p>CSS</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/javascript-logo-240.png" alt="...">
+                <p>JavaScript</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/bootstrap-logo-240.png" alt="...">
+                <p>Bootstrap</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container text-center">
+        <h3 class="mt-5 mb-4">Other Tech Tools</h3>
+        <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
+            <div class="col py-3">
+                <img src="/static/images/skills/visual-studio-logo-240.png" alt="...">
+                <p>VS Code</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/spring-boot-logo-240.png" alt="...">
+                <p>Spring Tool Suite</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/github-logo-240.png" alt="...">
+                <p>GitHub</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/pen-solid-240.png" alt="...">
+                <p>Postman</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/code-alt-regular-240.png" alt="...">
+                <p>Replit</p>
+            </div>
+            <div class="col py-3">
+                <img src="/static/images/skills/brain-regular-240.png" alt="...">
+                <p>Prompt Engineering</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

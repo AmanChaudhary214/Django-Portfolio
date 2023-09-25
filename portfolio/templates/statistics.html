@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+
+{% block title %} Statistics {% endblock title %}
+
+
+{% block style %}
+
+<style>
+    h2 {
+        text-align: center;
+    }
+
+    .calendar {
+        text-align: center;
+    }
+
+    .statistics_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .statistics_container img {
+        width: 400px;
+        transition: 0.5s;
+        border-radius: 6px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .statistics_container img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    .statistics_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .statistics_container img {
+        width: 400px;
+    }
+</style>
+
+{% endblock style %}
+
+
+{% block statisticsactive %} active {% endblock statisticsactive %}
+
+
+{% block body %}
+
+<div>
+    <h2 class="mt-5 mb-3">My Github Statistics</h2>
+    <div class="statistics_container">
+        <img src="https://github-readme-stats.vercel.app/api?username=AmanChaudhary214&theme=city_light&hide_border=true&include_all_commits=true&count_private=true"
+            alt="github-stats-card">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmanChaudhary214&langs_count=4&theme=city_light&hide_border=true&include_all_commits=true&count_private=true&layout=compact"
+            alt="github-top-langs">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=AmanChaudhary214&ring=5094f0&currStreakLabel=5094f0&fire=5094f0&theme=city_light&hide_border=true"
+            alt="github-streak-stats">
+    </div>
+    <h2 class="mt-5 mb-3">Github Calendar</h2>
+    <div class="react-activity-calendar calendar mb-5">
+        Loading the data just for you.
+    </div>
+</div>
+
+<br>
+<br>
+
+{% endblock body %}
+
+
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+<!-- ==================== GITHUB CALENDER ==================== -->
+<script>
+    GitHubCalendar(".calendar", "AmanChaudhary214", {
+        responsive: true,
+        global_stats: true,
+        tooltips: true,
+    });
+</script>

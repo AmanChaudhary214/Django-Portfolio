@@ -1,0 +1,172 @@
+{% extends "base.html" %}
+
+
+{% block title %} About {% endblock title %}
+
+
+{% block style %}
+
+<style>
+    .card {
+        margin: auto;
+        border-radius: 0.75rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .about_info {
+        margin: auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_info>div {
+        width: 12rem;
+        border: 2px solid black;
+        border-radius: 0.75rem;
+        transition: 0.5s;
+    }
+
+    .about_info>div:hover {
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    .about_info-title {
+        font-size: x-large;
+        font-weight: bold;
+        color: black;
+    }
+
+    .about_info-title,
+    .about_info-name {
+        display: block;
+        text-align: center;
+    }
+
+    div>h2 {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .education {
+        margin: auto;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .education>div {
+        width: 20rem;
+        text-align: center;
+        border-radius: 0.75rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    @media screen and (max-width:567px) {
+
+        .education,
+        .about_info {
+            flex-wrap: wrap;
+            row-gap: 1.5rem;
+            justify-content: center;
+        }
+    }
+</style>
+
+{% endblock style %}
+
+
+{% block aboutactive %} active {% endblock aboutactive %}
+
+
+{% block body %}
+
+<div class="container mb-5">
+    <div class="row mt-5 mb-3">
+        <div class="card py-4 mx-auto px-0" style="width: 80%; border: 0;">
+            <img src="/static/images/about.png" class="card-img-top mx-auto mb-0" style="width: 60%;" alt="...">
+            <div class="card-body text-center px-5">
+                <h3 class="card-title mb-3">About me</h3>
+                <p class="card-text">An engineer by textbooks, a coder at heart. While my degree screamed 'civil
+                    engineer', my passion whispered 'code'.<br>After graduation, I embraced the world of <b>Web
+                        Development</b>, enlightening myself with various tech stacks such as <b>Java, Spring,
+                        MySQL, HTML, CSS, JavaScript, Python,</b> and <b>Django</b>.
+                    <br><br>
+                    Problem-solving is my playground, and learning fuels my fire. I'm in pursuit of an organization
+                    that craves growth and innovation as much as I do.
+                    <br><br>
+                    When I'm not weaving code, you might find me capturing life's moments through my lens or penning
+                    down quotes. <b>Photography</b> and <b>Words</b> are my creative sanctuaries.
+                </p>
+            </div>
+            <div class="about_info my-5">
+                <div class="px-4 py-2">
+                    <span class="about_info-title">1200+</span>
+                    <span class="about_info-name">Hours of Coding</span>
+                </div>
+                <div class="px-4 py-2">
+                    <span class="about_info-title">10+</span>
+                    <span class="about_info-name">Completed Projects</span>
+                </div>
+                <div class="px-4 py-2">
+                    <span class="about_info-title">500+</span>
+                    <span class="about_info-name">DSA Problems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <h2 style="text-align: center;">🎓 EDUCATION</h2>
+    <div class="education">
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>Full Stack Web Development</h5>
+            <p>Masai School, Bengaluru</p>
+            <p>2022 - 2023</p>
+        </div>
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>Civil Engineering</h5>
+            <p>AKTU, Lucknow</p>
+            <p>2016 - 2020</p>
+        </div>
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>Senior Secondary</h5>
+            <p>Central Academy, Lucknow</p>
+            <p>2015 - 2016</p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h2 style="text-align: center;">💼 WORK EXPERIENCE</h2>
+    <div class="education">
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>AutoCAD Executive</h5>
+            <p>PCSMCPL, Lucknow</p>
+            <p>Dec 2021 - July 2022</p>
+        </div>
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>Graduate Trainee Engineer</h5>
+            <p>SPSCPL, Panchkula</p>
+            <p>Feb 2021 - Sept 2021</p>
+        </div>
+        <div class="px-4 py-2">
+            <img src="" alt="">
+            <h5>Freelancing</h5>
+            <p>Remote CAD Designer</p>
+            <p>Oct 2020 - July 2022</p>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+{% endblock body %}
